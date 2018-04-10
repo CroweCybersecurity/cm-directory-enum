@@ -1,4 +1,4 @@
-# py-trojan-emailer
+# cm-directory-enum
 A Python3 based tool for enumerating information from Cisco CallManager
 
 ## Requirements
