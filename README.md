@@ -9,6 +9,4 @@ A Python3 based tool for enumerating information from Cisco CallManager
 ```pip install -r requirements.txt```
 
 ## Example Usage
-### Querying and printing CallManager user informtion to a terminal
-
-```python3 cm-directory-enum.py -s 192.168.1.1```
+* Querying and printing CallManager user informtion to a terminal: ```python3 cm-directory-enum.py -s 192.168.1.1```
