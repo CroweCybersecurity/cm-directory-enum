@@ -13,11 +13,11 @@ from urllib.parse import urlparse
 from urllib.parse import parse_qs
 import xml.etree.ElementTree as ET
 
-def query_and_print_data(ip_address, port, serach_id, input_format, request_session):
+def query_and_print_data(ip_address, port, search_id, input_format, request_session):
     """Recursive function for doing simple GET requests, XML parsing, data output."""
     xml_tags_regular_expression = re.compile(r'<[^>]+>')
 
-    call_manager_search_url = 'http://{0}:{1}/ccmcip/xmldirectorylist.jsp?start={2}'.format(ip_address, port, serach_id)
+    call_manager_search_url = 'http://{0}:{1}/ccmcip/xmldirectorylist.jsp?start={2}'.format(ip_address, port, search_id)
 
     # GET a page from the call manager
     base_response = request_session.get(call_manager_search_url)
